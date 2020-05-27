@@ -1,4 +1,4 @@
-sed_test = input('sed_test', value: '/bin/sed s/exec/leader/1 /hab/svc/tar/hooks/run')
+sed_test = input('sed_test', value: '/bin/sed s/exec/leader/1 /hab/svc/sed/hooks/run')
 
 describe bash(sed_test) do
   its('stdout') { should match /leader/ }
